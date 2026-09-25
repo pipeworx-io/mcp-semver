@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/semver",
   "title": "Semver",
   "description": "Semantic Versioning (semver) MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/semver",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-semver",
