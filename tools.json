@@ -1,0 +1,60 @@
+[
+  {
+    "name": "parse_semver",
+    "description": "Parse a semantic-version string into major/minor/patch/prerelease/build (keyless, offline). Accepts an optional leading \"v\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "e.g. \"1.2.3-beta.1+build.5\"."
+        }
+      },
+      "required": [
+        "version"
+      ]
+    }
+  },
+  {
+    "name": "compare_semver",
+    "description": "Compare two semver strings. Returns -1 (a<b), 0 (equal), or 1 (a>b), honoring prerelease precedence.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "a": {
+          "type": "string",
+          "description": "First version."
+        },
+        "b": {
+          "type": "string",
+          "description": "Second version."
+        }
+      },
+      "required": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  {
+    "name": "satisfies_range",
+    "description": "Test whether a version satisfies a range: exact, ^ (caret), ~ (tilde), comparators (>=,>,<=,<,=), x-ranges (1.2.x), AND (space-separated), OR (||). E.g. version \"1.4.2\", range \"^1.2.0\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "The version to test."
+        },
+        "range": {
+          "type": "string",
+          "description": "The range, e.g. \"^1.2.0\" or \">=1.2.0 <2.0.0\"."
+        }
+      },
+      "required": [
+        "version",
+        "range"
+      ]
+    }
+  }
+]

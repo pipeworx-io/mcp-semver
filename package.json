@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-semver",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Semantic Versioning (semver) MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-semver": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "semver"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-semver.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/semver",
   "pipeworx": {
-    "sourceHash": "v1-c7df0834a17459adfc3fd6084112ac6146182a7c2b353ff07532dd9433ca0fea",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "mode": "gateway",
+    "slug": "semver",
+    "gatewaySlug": "semver",
+    "sourceHash": "v1-bc38fb24a93cec5f28124e621b40caa25c29f6f3944854682a800f9dc7aadd96",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
