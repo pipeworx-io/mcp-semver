@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-semver",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Semantic Versioning (semver) MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "semver",
     "gatewaySlug": "semver",
-    "sourceHash": "v1-bc38fb24a93cec5f28124e621b40caa25c29f6f3944854682a800f9dc7aadd96",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-986912ca9cadce15d7ec2f20e295d0cf6f88b9c0c6fc0db45b3e5bed27a7833f",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
